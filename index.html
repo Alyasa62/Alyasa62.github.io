@@ -13,6 +13,7 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -20,13 +21,15 @@
 
     <header id="hero">
         <div class="hero-content">
-            <span class="badge">Welcome to my portfolio</span>
+            <img src="videos/alyasa.png" alt="M. Al Yasa Dawood" class="hero-img">
+            
+            <span class="badge"> Welcome to my portfolio</span>
             <h1>I'm <span class="highlight">M. Al Yasa Dawood</span></h1>
             <h2>Software Engineer & Native Android Developer</h2>
             <p>I build intelligent, scalable, and offline-first mobile experiences using Kotlin, Jetpack Compose, and Clean Architecture.</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">Explore Work <i class="fas fa-arrow-right"></i></a>
-                <a href="videos/AlYasa_CV_recent.pdf" download class="btn secondary"><i class="fas fa-download"></i> Download CV</a>
+                <a href="videos/AlYasa_CV.pdf" download class="btn secondary"><i class="fas fa-download"></i> Download CV</a>
             </div>
         </div>
     </header>
@@ -38,7 +41,6 @@
                 <p>I am a Final-year Software Engineering student specializing in native Android development. I am passionate about Quality Engineering, focusing on building predictable, crash-free applications with robust local data persistence and seamless offline capabilities.</p>
                 <p>Beyond code, I serve as the IT Coordinator for the Blood Donation Society at the University of Mianwali, managing digital strategies and donor databases.</p>
             </div>
-            <br>
             <div class="education-card">
                 <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                 <p><strong>Bachelors of Software Engineering</strong></p>
@@ -69,14 +71,62 @@
             </div>
             <div class="skill-category">
                 <h3>DevOps</h3>
-                <p>Ci/Cd pipeline with GitHub Actions</p>
+                <p>CI/CD pipelines with GitHub Actions</p>
             </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <h3>Android Developer</h3>
+                    <h4>Mimar Logics</h4>
+                </div>
+                <div class="experience-date">
+                    <i class="far fa-calendar-alt"></i> Nov 2025 – Present
+                </div>
+            </div>
+            
+            <div class="tech-stack experience-stack">
+                <span>Kotlin</span><span>Jetpack Compose</span><span>Room DB</span><span>REST APIs</span>
+            </div>
+            
+            <ul class="experience-details">
+                <li>Developing a comprehensive RMS Android application to streamline business operations and daily tracking.</li>
+                <li>Designing responsive, user-friendly interfaces with Jetpack Compose, ensuring optimal performance across various Android devices.</li>
+                <li>Implementing robust offline-first architecture utilizing Room DB to guarantee seamless app functionality during network interruptions, with secure data synchronization via REST APIs.</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects" class="container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
+
+
+             <div class="project-card featured-card">
+                 <div class="video-container">
+                    <img src="videos/DrawingThoughtsLive.png" alt="Drawing Thoughts" class="media-trigger">
+                </div>
+                <div class="project-info">
+                    <h3>Drawing Thoughts</h3>
+                    <p>A cross-platform drawing and note-taking application spanning Android and Desktop environments, built using Kotlin Multiplatform (KMP).</p>
+                    <div class="tech-stack">
+                        <span>Kotlin Multiplatform</span><span>Desktop</span><span>Compose</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Alyasa62/drawing-thoughts-KMP" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.yasadevs.drawingthoughts" target="_blank" class="play-store-btn">
+                            <i class="fab fa-google-play"></i> Live on Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="project-card">
                 <div class="video-container">
@@ -175,21 +225,7 @@
                 </div>
             </div>
 
-            <div class="project-card">
-                 <div class="video-container">
-                    <img src="videos/DrawingThoughts.png" alt="Drawing Thoughts" class="media-trigger">
-                </div>
-                <div class="project-info">
-                    <h3>Drawing Thoughts</h3>
-                    <p>A cross-platform drawing and note-taking application spanning Android and Desktop environments, built using Kotlin Multiplatform (KMP).</p>
-                    <div class="tech-stack">
-                        <span>Kotlin Multiplatform</span><span>Desktop</span><span>Compose</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alyasa62/drawing-thoughts-KMP" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    </div>
-                </div>
-            </div>
+           
 
         </div>
     </section>
