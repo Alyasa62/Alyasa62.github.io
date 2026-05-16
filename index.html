@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Al Yasa Dawood | Android Developer - Kotlin &amp; Jetpack Compose</title>
-    <meta name="description" content="Android Developer focused on Kotlin, Jetpack Compose, Firebase, Room DB, REST APIs, Clean Architecture, offline-first apps, and Android bug fixing.">
+    <meta name="description" content="Android Developer focused on Kotlin, Jetpack Compose, Firebase, Supabase, Room DB, REST APIs, Clean Architecture, offline-first apps, and Android bug fixing.">
     <meta name="theme-color" content="#0b1410">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://alyasa62.github.io/">
@@ -14,13 +14,14 @@
     <meta property="og:site_name" content="Muhammad Al Yasa Dawood Portfolio">
     <meta property="og:url" content="https://alyasa62.github.io/">
     <meta property="og:title" content="Muhammad Al Yasa Dawood | Android Developer - Kotlin &amp; Jetpack Compose">
-    <meta property="og:description" content="Android Developer focused on Kotlin, Jetpack Compose, Firebase, Room DB, REST APIs, Clean Architecture, offline-first apps, and Android bug fixing.">
+    <meta property="og:description" content="Android Developer focused on Kotlin, Jetpack Compose, Firebase, Supabase, Room DB, REST APIs, Clean Architecture, offline-first apps, and Android bug fixing.">
     <meta property="og:image" content="https://alyasa62.github.io/assets/images/project-hunarmand-cover.jpg">
     <meta property="og:image:alt" content="Hunarmand Android marketplace project cover">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Muhammad Al Yasa Dawood | Android Developer - Kotlin &amp; Jetpack Compose">
-    <meta name="twitter:description" content="Android Developer focused on Kotlin, Jetpack Compose, Firebase, Room DB, REST APIs, Clean Architecture, offline-first apps, and Android bug fixing.">
+    <meta name="twitter:description" content="Android Developer focused on Kotlin, Jetpack Compose, Firebase, Supabase, Room DB, REST APIs, Clean Architecture, offline-first apps, and Android bug fixing.">
     <meta name="twitter:image" content="https://alyasa62.github.io/assets/images/project-hunarmand-cover.jpg">
+    <meta name="twitter:image:alt" content="Hunarmand Android marketplace project cover">
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
         {
@@ -44,8 +45,12 @@
                 "Kotlin",
                 "Jetpack Compose",
                 "Firebase",
+                "Supabase",
                 "Room DB",
                 "REST APIs",
+                "Hilt",
+                "Dependency Injection",
+                "Repository Pattern",
                 "Clean Architecture",
                 "MVVM",
                 "MVI",
@@ -71,10 +76,10 @@
             </button>
             <div class="nav-menu" id="site-menu">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a class="button button--primary button--small nav-cta" href="#contact">Hire Me</a>
@@ -84,220 +89,79 @@
 
     <main id="main-content">
         <section class="hero section">
-            <div class="container hero__grid">
-                <div class="hero__content" data-reveal>
-                    <p class="eyebrow">Freelance Android developer</p>
-                    <h1>Kotlin Android Developer for Clean, Reliable Mobile Apps</h1>
-                    <p class="hero__lead">I build and fix Android apps using Kotlin, Jetpack Compose, Firebase, Room DB, REST APIs, and Clean Architecture.</p>
-                    <p class="hero__supporting">Available for Android bug fixing, Compose UI, Firebase integration, offline-first features, and existing app improvements.</p>
-                    <div class="hero__actions">
-                        <a class="button button--primary" href="#contact">Hire Me</a>
-                        <a class="button button--secondary" href="#projects">View Projects</a>
-                        <a class="button button--ghost" href="assets/documents/muhammad-al-yasa-dawood-cv.pdf" download="Muhammad-Al-Yasa-Dawood-CV.pdf">Download CV</a>
-                    </div>
-                    <ul class="trust-chips" aria-label="Core strengths">
-                        <li>Kotlin + Jetpack Compose</li>
-                        <li>Firebase / Room DB</li>
-                        <li>Offline-first apps</li>
-                        <li>Clean Architecture</li>
-                        <li>Open to freelance work</li>
-                    </ul>
-                </div>
-
-                <aside class="hero__sidebar" data-reveal>
-                    <article class="surface-card profile-panel">
-                        <img
-                            src="assets/images/profile-alyasa.png"
-                            alt="Portrait of Muhammad Al Yasa Dawood"
-                            class="profile-panel__image"
-                            width="1086"
-                            height="1280"
-                            decoding="async"
-                            fetchpriority="high"
-                        >
-                        <div class="profile-panel__body">
-                            <p class="profile-panel__name">Muhammad Al Yasa Dawood</p>
-                            <p class="profile-panel__role">Android Developer</p>
-                            <ul class="profile-panel__list">
-                                <li>Android Developer at Mimar Logics</li>
-                                <li>Google Play publishing experience with Drawing Thoughts</li>
-                                <li>Runner-Up at Ideathon &amp; Innovation Expo 2026</li>
-                            </ul>
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__content" data-reveal>
+                        <p class="eyebrow">Android freelance support</p>
+                        <h1>I build and fix Android apps.</h1>
+                        <p class="hero__lead">Kotlin, Jetpack Compose, Firebase, Supabase, Room DB, REST APIs, Hilt, and Clean Architecture.</p>
+                        <p class="hero__supporting">I help fix broken Android flows, build Compose UI from Figma or screenshots, and improve data layers in existing apps.</p>
+                        <div class="hero__actions">
+                            <a class="button button--primary" href="#contact">Hire Me</a>
+                            <a class="button button--secondary" href="#projects">View Projects</a>
+                            <a class="button button--ghost" href="assets/documents/muhammad-al-yasa-dawood-cv.pdf" download="Muhammad-Al-Yasa-Dawood-CV.pdf">Download CV</a>
                         </div>
-                    </article>
-
-                    <article class="surface-card quick-proof">
-                        <p class="quick-proof__label">What I usually help clients with</p>
-                        <ul class="quick-proof__list">
-                            <li>Compose UI implementation from Figma or screenshots</li>
-                            <li>Login, Firebase, database, and navigation fixes</li>
-                            <li>Room DB, sync flows, and offline-first improvements</li>
-                        </ul>
-                    </article>
-                </aside>
-            </div>
-        </section>
-
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">About</p>
-                    <h2>I build and fix Android apps.</h2>
-                    <p>I help clients improve app stability, UI, database flows, and architecture with practical Android delivery rather than generic showcase work.</p>
-                </div>
-                <div class="about-grid">
-                    <article class="surface-card about-copy" data-reveal>
-                        <p>I&apos;m an Android Developer focused on building practical, stable, and maintainable mobile apps. I work mainly with Kotlin, Jetpack Compose, Firebase, Room DB, REST APIs, MVVM/MVI, and Clean Architecture.</p>
-                        <p>My strength is turning app ideas and broken Android flows into clean, working features: authentication, offline storage, database sync, marketplace flows, UI screens, notifications, and app architecture improvements.</p>
-                        <p>I am currently completing my Software Engineering degree at the University of Mianwali while actively building production-style Android projects and freelance-ready mobile solutions.</p>
-                    </article>
-
-                    <div class="about-sidebar">
-                        <article class="surface-card info-card" data-reveal>
-                            <p class="info-card__label">Education</p>
-                            <h3>BS Software Engineering</h3>
-                            <p>University of Mianwali</p>
-                            <p>Graduating May 2026</p>
-                            <p>CGPA: 3.32 / 4.0</p>
-                        </article>
-
-                        <article class="surface-card info-card info-card--subtle" data-reveal>
-                            <p class="info-card__label">Other involvement</p>
-                            <h3>IT Coordinator</h3>
-                            <p>Blood Donation Society, University of Mianwali</p>
-                            <p>Handled digital coordination and donor data organization outside my core Android work.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <div class="container">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Skills</p>
-                    <h2>Android delivery, structured for client work</h2>
-                    <p>The stack below is organized around how Android projects actually get shipped and improved.</p>
-                </div>
-
-                <div class="skills-grid">
-                    <article class="surface-card skill-card" data-reveal>
-                        <h3>Android Development</h3>
-                        <p>Native Android UI, feature flows, and production-ready screens built with modern Android tools.</p>
-                        <ul class="chip-list" aria-label="Android development skills">
-                            <li>Kotlin</li>
-                            <li>Java</li>
-                            <li>Android SDK</li>
-                            <li>Jetpack Compose</li>
-                            <li>Material Design</li>
-                        </ul>
-                    </article>
-
-                    <article class="surface-card skill-card" data-reveal>
-                        <h3>Architecture</h3>
-                        <p>Code organized for stability, maintainability, and faster iteration when features or fixes keep evolving.</p>
-                        <ul class="chip-list" aria-label="Architecture skills">
-                            <li>MVVM</li>
-                            <li>MVI</li>
+                        <ul class="trust-chips" aria-label="Core strengths">
+                            <li>Kotlin + Jetpack Compose</li>
+                            <li>Firebase / Supabase</li>
+                            <li>Room DB / REST APIs</li>
+                            <li>Offline-first apps</li>
                             <li>Clean Architecture</li>
-                            <li>Repository Pattern</li>
-                            <li>Hilt / Dependency Injection</li>
                         </ul>
-                    </article>
-
-                    <article class="surface-card skill-card" data-reveal>
-                        <h3>Data &amp; Backend</h3>
-                        <p>Authentication, local persistence, network requests, and data sync for practical Android product flows.</p>
-                        <ul class="chip-list" aria-label="Data and backend skills">
-                            <li>Firebase</li>
-                            <li>Room DB</li>
-                            <li>SQLite</li>
-                            <li>REST APIs</li>
-                            <li>Retrofit</li>
-                        </ul>
-                    </article>
-
-                    <article class="surface-card skill-card" data-reveal>
-                        <h3>Tools</h3>
-                        <p>Version control, delivery workflow, and design handoff support for day-to-day Android implementation.</p>
-                        <ul class="chip-list" aria-label="Tools">
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Android Studio</li>
-                            <li>CI / CD</li>
-                            <li>Figma basics</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="services">
-            <div class="container">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Services</p>
-                    <h2>Services I can help with</h2>
-                    <p>Focused on the Android work clients usually need after an app idea, a bug report, or a half-finished product.</p>
-                </div>
-
-                <div class="services-grid">
-                    <article class="surface-card service-card" data-reveal>
-                        <h3>Android Bug Fixing</h3>
-                        <p>Fix crashes, broken flows, login issues, navigation problems, and database errors in existing Android apps.</p>
-                    </article>
-
-                    <article class="surface-card service-card" data-reveal>
-                        <h3>Jetpack Compose UI Development</h3>
-                        <p>Build Compose screens from Figma files, screenshots, or rough requirements with clean state handling and responsive layouts.</p>
-                    </article>
-
-                    <article class="surface-card service-card" data-reveal>
-                        <h3>Firebase Integration</h3>
-                        <p>Implement authentication, database flows, and backend-connected Android features with clearer app behavior and fewer edge-case failures.</p>
-                    </article>
-
-                    <article class="surface-card service-card" data-reveal>
-                        <h3>Room DB / Offline-First Features</h3>
-                        <p>Add local persistence, caching, and sync-friendly data layers so Android apps remain useful when connectivity is unreliable.</p>
-                    </article>
-
-                    <article class="surface-card service-card" data-reveal>
-                        <h3>REST API Integration</h3>
-                        <p>Connect Android apps to APIs with structured models, loading states, error handling, and maintainable networking code.</p>
-                    </article>
-
-                    <article class="surface-card service-card" data-reveal>
-                        <h3>App Refactoring / Clean Architecture</h3>
-                        <p>Restructure messy Android codebases into clearer layers so new features and fixes become easier to deliver safely.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="experience">
-            <div class="container">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Experience</p>
-                    <h2>Current Android experience</h2>
-                    <p>Real work experience that supports the freelance positioning instead of distracting from it.</p>
-                </div>
-
-                <article class="surface-card experience-card" data-reveal>
-                    <div class="experience-card__header">
-                        <div>
-                            <p class="experience-card__role">Android Developer</p>
-                            <h3>Mimar Logics</h3>
-                        </div>
-                        <p class="experience-card__date">Nov 2025 - Present</p>
                     </div>
-                    <p class="experience-card__summary">Working on Android applications for business operations and daily tracking using Kotlin, Jetpack Compose, Room DB, REST APIs, and offline-first architecture.</p>
-                    <ul class="experience-list">
-                        <li>Build responsive Jetpack Compose screens for real Android workflows.</li>
-                        <li>Implement Room DB persistence for offline-first usage.</li>
-                        <li>Integrate REST APIs and synchronization flows.</li>
-                        <li>Improve app reliability, maintainability, and clean architecture.</li>
-                    </ul>
-                </article>
+
+                    <aside class="hero__sidebar" data-reveal>
+                        <article class="surface-card profile-panel">
+                            <img
+                                src="assets/images/profile-alyasa.png"
+                                alt="Portrait of Muhammad Al Yasa Dawood"
+                                class="profile-panel__image"
+                                width="1086"
+                                height="1280"
+                                decoding="async"
+                                fetchpriority="high"
+                            >
+                            <div class="profile-panel__body">
+                                <p class="profile-panel__name">Muhammad Al Yasa Dawood</p>
+                                <p class="profile-panel__role">Android Developer</p>
+                                <ul class="profile-panel__list">
+                                    <li>Hunarmand runner-up at Namal Ideathon &amp; Innovation Expo 2026</li>
+                                    <li>Drawing Thoughts release proof from Google Play</li>
+                                    <li>Public GitHub Android projects and case studies</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="surface-card quick-proof">
+                            <p class="quick-proof__label">Best fit for</p>
+                            <ul class="quick-proof__list">
+                                <li>Android bug fixing and broken login or navigation flows</li>
+                                <li>Compose UI implementation from design references</li>
+                                <li>Firebase, Supabase, Room, and sync-related improvements</li>
+                            </ul>
+                        </article>
+                    </aside>
+                </div>
+
+                <div class="hero-outcomes">
+                    <article class="surface-card hero-outcome-card" data-reveal>
+                        <p class="hero-outcome-card__label">Fix unstable apps</p>
+                        <h3>Crash fixes, auth issues, and broken Android flows</h3>
+                        <p>Useful when an existing app needs reliable bug fixing instead of a full rebuild.</p>
+                    </article>
+
+                    <article class="surface-card hero-outcome-card" data-reveal>
+                        <p class="hero-outcome-card__label">Build clearer UI</p>
+                        <h3>Compose screens from Figma, screenshots, or rough specs</h3>
+                        <p>Focused on practical screen delivery, state handling, and mobile responsiveness.</p>
+                    </article>
+
+                    <article class="surface-card hero-outcome-card" data-reveal>
+                        <p class="hero-outcome-card__label">Improve the data layer</p>
+                        <h3>Firebase, Supabase, Room DB, REST APIs, and clean architecture</h3>
+                        <p>Helpful for apps that need better persistence, sync behavior, or maintainability.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -305,8 +169,8 @@
             <div class="container">
                 <div class="section-heading" data-reveal>
                     <p class="eyebrow">Projects</p>
-                    <h2>Featured Android projects</h2>
-                    <p>The strongest work is framed as case studies so clients can assess Android scope, technical decisions, and proof signals quickly.</p>
+                    <h2>Featured Android work first</h2>
+                    <p>The strongest selling point is project proof. These are the Android builds most useful for clients and recruiters to review first.</p>
                 </div>
 
                 <div class="featured-projects">
@@ -331,22 +195,36 @@
                                 </div>
                             </div>
                             <h3>Hunarmand <span>On-Demand Skilled Worker Marketplace</span></h3>
-                            <p>An Android marketplace connecting customers with local skilled workers. Built customer and worker flows, service discovery, job posting, booking lifecycle, authentication, notifications, and location-based service matching.</p>
-                            <ul class="project-points">
-                                <li>Designed for two-sided marketplace flows instead of a single-user utility app.</li>
-                                <li>Focused on booking clarity, trust, and local service discovery.</li>
-                                <li>Recognized as Runner-Up at Ideathon &amp; Innovation Expo 2026.</li>
-                            </ul>
+                            <p class="project-summary">An Android marketplace connecting customers with local skilled workers through cleaner discovery, booking, and service coordination flows.</p>
+                            <div class="project-detail-grid">
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Problem solved</p>
+                                    <p>Made local service booking easier to understand and manage on mobile.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">My role</p>
+                                    <p>Built Android customer and worker flows, service discovery, job posting, booking lifecycle, and notifications.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Main features</p>
+                                    <p>Onboarding, provider profiles, service search, booking states, and job tracking.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Architecture</p>
+                                    <p>Jetpack Compose, MVVM, Clean Architecture, and location-aware service matching.</p>
+                                </section>
+                            </div>
                             <ul class="chip-list" aria-label="Hunarmand tech stack">
                                 <li>Kotlin</li>
                                 <li>Jetpack Compose</li>
                                 <li>MVVM</li>
                                 <li>Clean Architecture</li>
-                                <li>Location Matching</li>
+                                <li>Marketplace Flows</li>
                             </ul>
                             <div class="project-actions">
+                                <a class="button button--secondary" href="https://www.linkedin.com/posts/namal-university-mianwali_namalideathon2026-innovationexpo2026-futureinnovators-activity-7459875785982697472--Gfz" target="_blank" rel="noopener noreferrer">Award Proof</a>
                                 <span class="button button--static">Private Repository</span>
-                                <button class="button button--primary" type="button" data-modal-template="case-study-hunarmand" aria-haspopup="dialog">Case Study</button>
+                                <button class="button button--primary" type="button" data-modal-template="case-study-hunarmand" aria-haspopup="dialog" aria-label="Open Hunarmand case study">Case Study</button>
                             </div>
                         </div>
                     </article>
@@ -372,12 +250,25 @@
                                 </div>
                             </div>
                             <h3>Akhir Kab <span>Offline-First Countdown App</span></h3>
-                            <p>Offline-first countdown and age calculator app built with Kotlin, Jetpack Compose, Room DB, and Clean Architecture.</p>
-                            <ul class="project-points">
-                                <li>Designed to work entirely without an internet connection.</li>
-                                <li>Built around local persistence, event tracking, and predictable UI state.</li>
-                                <li>Framed as a compact example of maintainable Android architecture.</li>
-                            </ul>
+                            <p class="project-summary">A local-first countdown and age calculator app built to stay useful without internet access or backend dependency.</p>
+                            <div class="project-detail-grid">
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Problem solved</p>
+                                    <p>Delivered a cleaner countdown utility that works fully offline.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">My role</p>
+                                    <p>Designed and built the Android app, including state handling, persistence, and UI implementation.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Main features</p>
+                                    <p>Event countdowns, age calculation, local storage, and predictable Compose state.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Architecture</p>
+                                    <p>Jetpack Compose, Room DB, MVI, offline-first data flow, and Clean Architecture.</p>
+                                </section>
+                            </div>
                             <ul class="chip-list" aria-label="Akhir Kab tech stack">
                                 <li>Kotlin</li>
                                 <li>Jetpack Compose</li>
@@ -388,7 +279,7 @@
                             <div class="project-actions">
                                 <a class="button button--secondary" href="https://github.com/Alyasa62/AkhirKab" target="_blank" rel="noopener noreferrer">GitHub</a>
                                 <a class="button button--secondary" href="https://www.linkedin.com/posts/muhammad-al-yasa-dawood-666317286_androiddev-kotlin-jetpackcompose-activity-7362419348520472576-9wXc" target="_blank" rel="noopener noreferrer">Video Demo</a>
-                                <button class="button button--primary" type="button" data-modal-template="case-study-akhir-kab" aria-haspopup="dialog">Case Study</button>
+                                <button class="button button--primary" type="button" data-modal-template="case-study-akhir-kab" aria-haspopup="dialog" aria-label="Open Akhir Kab case study">Case Study</button>
                             </div>
                         </div>
                     </article>
@@ -397,7 +288,7 @@
                         <div class="project-card__media">
                             <img
                                 src="assets/images/project-drawing-thoughts-cover.jpg"
-                                alt="Drawing Thoughts Play Store listing screenshot"
+                                alt="Drawing Thoughts Google Play listing screenshot"
                                 width="1880"
                                 height="927"
                                 loading="lazy"
@@ -408,18 +299,31 @@
                             <div class="project-card__meta">
                                 <span class="project-role">Built by me</span>
                                 <div class="badge-list" aria-label="Drawing Thoughts highlights">
-                                    <span>Google Play Publishing</span>
+                                    <span>Google Play Release Proof</span>
                                     <span>Kotlin Multiplatform</span>
                                     <span>Cross-Platform Canvas</span>
                                 </div>
                             </div>
                             <h3>Drawing Thoughts <span>Cross-Platform Infinite Canvas Whiteboard App</span></h3>
-                            <p>Cross-platform drawing and note-taking app using Kotlin Multiplatform and Compose, built for Android and desktop-style canvas interactions.</p>
-                            <ul class="project-points">
-                                <li>Explores canvas interactions, note tooling, and multi-platform Compose UI.</li>
-                                <li>Shows real app publishing work rather than a static mock project.</li>
-                                <li>Shows practical Kotlin work beyond standard CRUD screens.</li>
-                            </ul>
+                            <p class="project-summary">A cross-platform drawing and note-taking app that shows Android work beyond standard form or CRUD screens.</p>
+                            <div class="project-detail-grid">
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Problem solved</p>
+                                    <p>Built a more complex interaction model for drawing, note-taking, and canvas behavior.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">My role</p>
+                                    <p>Built the product around Kotlin Multiplatform and Compose, with focus on canvas tools and release readiness.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Main features</p>
+                                    <p>Drawing tools, note boards, Android and desktop support, and publishable app structure.</p>
+                                </section>
+                                <section class="project-detail">
+                                    <p class="project-detail__label">Architecture</p>
+                                    <p>Kotlin Multiplatform, Compose UI, shared logic, and Android publishing workflow.</p>
+                                </section>
+                            </div>
                             <ul class="chip-list" aria-label="Drawing Thoughts tech stack">
                                 <li>Kotlin Multiplatform</li>
                                 <li>Compose</li>
@@ -428,7 +332,8 @@
                             </ul>
                             <div class="project-actions">
                                 <a class="button button--secondary" href="https://github.com/Alyasa62/drawing-thoughts-KMP" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <button class="button button--primary" type="button" data-modal-template="case-study-drawing-thoughts" aria-haspopup="dialog">Case Study</button>
+                                <a class="button button--secondary" href="https://play.google.com/store/apps/details?id=com.yasadevs.drawingthoughts" target="_blank" rel="noopener noreferrer">Play Store</a>
+                                <button class="button button--primary" type="button" data-modal-template="case-study-drawing-thoughts" aria-haspopup="dialog" aria-label="Open Drawing Thoughts case study">Case Study</button>
                             </div>
                         </div>
                     </article>
@@ -437,7 +342,7 @@
                 <div class="section-heading section-heading--compact" data-reveal>
                     <p class="eyebrow">Additional work</p>
                     <h2>Supporting projects</h2>
-                    <p>Useful supporting work, kept secondary so the portfolio stays clearly positioned around Android client work.</p>
+                    <p>Kept lower in the page so the portfolio stays clearly positioned around Android client work.</p>
                 </div>
 
                 <div class="secondary-projects">
@@ -449,7 +354,7 @@
                         </div>
                         <div class="project-card__content">
                             <p class="project-role">Built by me</p>
-                            <p>A supporting productivity build included lower in the page so it does not dilute the Android-focused positioning.</p>
+                            <p>A secondary build that stays below the main Android portfolio story so it does not dilute the positioning.</p>
                             <ul class="chip-list" aria-label="Flowcus tech stack">
                                 <li>Flutter</li>
                                 <li>Productivity</li>
@@ -486,7 +391,53 @@
                             </div>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Services</p>
+                    <h2>Services you can actually buy</h2>
+                    <p>Focused on the Android work that usually starts from a bug list, a feature request, or an app that needs cleanup.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>Android Bug Fixing</h3>
+                        <p>Fix crashes, broken login flows, navigation bugs, database issues, and unstable Android screens.</p>
+                    </article>
+
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>Jetpack Compose UI Development</h3>
+                        <p>Build clean Compose screens from Figma, screenshots, or rough requirements with practical mobile layout behavior.</p>
+                    </article>
+
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>Firebase / Supabase Integration</h3>
+                        <p>Set up authentication, backend-connected flows, and data handling with clearer Android-side implementation.</p>
+                    </article>
+
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>Room DB / Offline-First Features</h3>
+                        <p>Add local persistence, caching, and sync-friendly flows so the app still works when connectivity is unreliable.</p>
+                    </article>
+
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>REST API Integration</h3>
+                        <p>Connect Android apps to APIs with structured models, loading states, error handling, and better maintainability.</p>
+                    </article>
+
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>App Refactoring / Clean Architecture</h3>
+                        <p>Clean up messy Android codebases so new features, bug fixes, and onboarding become easier to manage safely.</p>
+                    </article>
+
+                    <article class="surface-card service-card" data-reveal>
+                        <h3>Play Store / App Polish Support</h3>
+                        <p>Help prepare Android apps for stronger release quality, better UI consistency, and a more professional final pass.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -495,50 +446,212 @@
             <div class="container">
                 <div class="section-heading" data-reveal>
                     <p class="eyebrow">Trust</p>
-                    <h2>Proof, you can verify quickly</h2>
-                    <p>Public code, published work, and grounded experience signals without inflated claims.</p>
+                    <h2>Proof that matters</h2>
+                    <p>Project proof, public code, and grounded background signals without fake numbers, fake clients, or inflated claims.</p>
                 </div>
 
-                <div class="proof-grid">
-                    <article class="surface-card github-card" data-reveal>
+                <div class="proof-layout">
+                    <article class="surface-card proof-spotlight" data-reveal>
                         <img
-                            src="assets/images/github-contributions.png"
-                            alt="Screenshot of GitHub contribution activity"
-                            width="1919"
-                            height="930"
+                            src="assets/images/hunarmand-runner-up.jpg"
+                            alt="Hunarmand team receiving Runner-Up award at Namal Ideathon and Innovation Expo 2026"
+                            width="1330"
+                            height="804"
                             loading="lazy"
                             decoding="async"
-                            class="github-card__image"
+                            class="proof-spotlight__image"
                         >
-                        <div class="github-card__body">
-                            <h3>GitHub &amp; open-source visibility</h3>
-                            <p>Clients can review public Android and Kotlin work directly instead of relying only on summaries.</p>
-                            <a class="button button--secondary" href="https://github.com/Alyasa62" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
+                        <div class="proof-spotlight__body">
+                            <p class="proof-spotlight__label">Proof spotlight</p>
+                            <h3>Hunarmand earned Runner-Up recognition</h3>
+                            <p>Namal University&apos;s Ideathon &amp; Innovation Expo 2026 provides a real public proof point behind the marketplace project.</p>
+                            <a class="button button--secondary" href="https://www.linkedin.com/posts/namal-university-mianwali_namalideathon2026-innovationexpo2026-futureinnovators-activity-7459875785982697472--Gfz" target="_blank" rel="noopener noreferrer">View Namal Post</a>
                         </div>
                     </article>
 
-                    <div class="trust-grid">
+                    <div class="proof-list">
                         <article class="surface-card trust-card" data-reveal>
-                            <h3>Android Developer at Mimar Logics</h3>
-                            <p>Current role focused on Android business workflows, Room DB, APIs, and maintainable implementation.</p>
+                            <h3>Google Play release proof</h3>
+                            <p>Drawing Thoughts includes release proof from Google Play in the project case study.</p>
                         </article>
 
                         <article class="surface-card trust-card" data-reveal>
-                            <h3>Google Play publishing experience</h3>
-                            <p>Drawing Thoughts gives the portfolio a mobile publishing signal without relying only on private work claims.</p>
+                            <p class="info-card__label">GitHub profile</p>
+                            <img
+                                src="assets/images/github-profile-avatar.png"
+                                alt="GitHub profile image for Muhammad Al Yasa Dawood"
+                                width="240"
+                                height="240"
+                                loading="lazy"
+                                decoding="async"
+                                class="github-avatar"
+                            >
+                            <h3>Public GitHub projects</h3>
+                            <p class="github-handle">@Alyasa62</p>
+                            <p>Clients can review Android, Kotlin, and Compose work directly on GitHub.</p>
+                            <a class="proof-link" href="https://github.com/Alyasa62" target="_blank" rel="noopener noreferrer">Open GitHub Profile</a>
                         </article>
 
                         <article class="surface-card trust-card" data-reveal>
-                            <h3>Runner-Up recognition</h3>
-                            <p>Hunarmand earned Runner-Up at Ideathon &amp; Innovation Expo 2026.</p>
+                            <h3>Software Engineering background</h3>
+                            <p>BS Software Engineering, University of Mianwali. Finishing in 2026 while building Android project case studies.</p>
                         </article>
 
                         <article class="surface-card trust-card" data-reveal>
-                            <h3>BS Software Engineering</h3>
-                            <p>Formal software engineering training at the University of Mianwali, finishing in 2026.</p>
+                            <h3>Android project experience</h3>
+                            <p>Marketplace, offline-first utility, and cross-platform canvas projects cover different Android implementation needs.</p>
                         </article>
                     </div>
                 </div>
+
+                <div class="proof-subsection" data-reveal>
+                    <div class="section-heading section-heading--compact proof-subsection__heading">
+                        <p class="eyebrow">GitHub Proof</p>
+                        <h2>GitHub profile, pinned projects, and contribution activity</h2>
+                        <p>A larger screenshot so clients and recruiters can quickly see the account, pinned Android work, and active contribution history.</p>
+                    </div>
+
+                    <article class="surface-card github-showcase">
+                        <div class="github-showcase__content">
+                            <p class="info-card__label">Profile overview</p>
+                            <h3>@Alyasa62</h3>
+                            <p>This screenshot shows the GitHub home screen with pinned repositories like Drawing Thoughts, AkhirKab, and Nupe, plus visible contribution activity.</p>
+                            <a class="button button--secondary" href="https://github.com/Alyasa62" target="_blank" rel="noopener noreferrer">Open GitHub Profile</a>
+                        </div>
+                        <img
+                            src="assets/images/GitHub-Home-Screen.png"
+                            alt="GitHub home screen showing Muhammad Al Yasa Dawood's pinned repositories and contribution activity"
+                            width="1920"
+                            height="929"
+                            loading="lazy"
+                            decoding="async"
+                            class="github-showcase__image"
+                        >
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Skills</p>
+                    <h2>Android delivery</h2>
+                    <p>Grouped by the parts of Android work that you usually need built, fixed, or improved.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="surface-card skill-card" data-reveal>
+                        <h3>Android Development</h3>
+                        <p>Native Android UI, screen flows, and production-ready implementation with modern Android tools.</p>
+                        <ul class="chip-list" aria-label="Android development skills">
+                            <li>Kotlin</li>
+                            <li>Java</li>
+                            <li>Android SDK</li>
+                            <li>Jetpack Compose</li>
+                            <li>Material Design</li>
+                        </ul>
+                    </article>
+
+                    <article class="surface-card skill-card" data-reveal>
+                        <h3>Architecture</h3>
+                        <p>Structured Android code for clearer ownership, safer changes, and better long-term maintainability.</p>
+                        <ul class="chip-list" aria-label="Architecture skills">
+                            <li>MVVM</li>
+                            <li>MVI</li>
+                            <li>Clean Architecture</li>
+                            <li>Repository Pattern</li>
+                            <li>Hilt / Dependency Injection</li>
+                        </ul>
+                    </article>
+
+                    <article class="surface-card skill-card" data-reveal>
+                        <h3>Data &amp; Backend</h3>
+                        <p>Authentication, local storage, API integration, and sync-friendly Android data flows.</p>
+                        <ul class="chip-list" aria-label="Data and backend skills">
+                            <li>Firebase</li>
+                            <li>Supabase</li>
+                            <li>Room DB</li>
+                            <li>SQLite</li>
+                            <li>REST APIs</li>
+                            <li>Retrofit</li>
+                        </ul>
+                    </article>
+
+                    <article class="surface-card skill-card" data-reveal>
+                        <h3>Tools</h3>
+                        <p>Delivery workflow, source control, and design handoff support for day-to-day Android work.</p>
+                        <ul class="chip-list" aria-label="Tools">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Android Studio</li>
+                            <li>CI / CD</li>
+                            <li>Figma basics</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">About</p>
+                    <h2>I help improve app stability, UI, database flows, and architecture.</h2>
+                    <p>The goal is practical Android work that clients can ship, maintain, and trust in day-to-day use.</p>
+                </div>
+                <div class="about-grid">
+                    <article class="surface-card about-copy" data-reveal>
+                        <p>I build and fix Android apps using Kotlin, Jetpack Compose, Firebase, Supabase, Room DB, REST APIs, Hilt, MVVM/MVI, Repository Pattern, and Clean Architecture.</p>
+                        <p>My work is strongest when an app already has a real problem to solve: unstable authentication, broken navigation, unfinished UI, poor local storage behavior, or a data layer that needs cleanup.</p>
+                        <p>I&apos;m currently completing my Software Engineering degree at the University of Mianwali while building Android projects around real product flows.</p>
+                    </article>
+
+                    <div class="about-sidebar">
+                        <article class="surface-card info-card" data-reveal>
+                            <p class="info-card__label">Education</p>
+                            <h3>BS Software Engineering</h3>
+                            <p>University of Mianwali</p>
+                            <p>Graduating May 2026</p>
+                            <p>CGPA: 3.32 / 4.0</p>
+                        </article>
+
+                        <article class="surface-card info-card info-card--subtle" data-reveal>
+                            <p class="info-card__label">How I work</p>
+                            <h3>Freelance-ready Android delivery</h3>
+                            <ul class="info-list">
+                                <li>Clear Kotlin and Compose implementation.</li>
+                                <li>Maintainable data layers with Hilt, repositories, and local persistence.</li>
+                                <li>Direct communication around bugs, UI scope, and feature delivery.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Additional Experience</p>
+                    <h2>Mimar Logics</h2>
+                    <p>Included as supporting experience, not the main portfolio story.</p>
+                </div>
+
+                <article class="surface-card experience-card experience-card--compact" data-reveal>
+                    <div class="experience-card__header">
+                        <div>
+                            <p class="experience-card__role">Android Developer</p>
+                            <h3>Mimar Logics</h3>
+                        </div>
+                        <p class="experience-card__date">Nov 2025 - Present</p>
+                    </div>
+                    <p class="experience-card__summary">Contributing to Android RMS features using Kotlin, Jetpack Compose, Room DB, REST APIs, and clean data-layer practices.</p>
+                    <ul class="experience-list">
+                        <li>Compose UI implementation for business workflows and daily tracking screens.</li>
+                        <li>Room DB persistence and API-connected Android flows with maintainability in mind.</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
@@ -548,7 +661,7 @@
                     <div class="contact-panel__intro">
                         <p class="eyebrow">Contact</p>
                         <h2>Need help with your Android app?</h2>
-                        <p>Send me your app issue, feature request, or Figma/screenshots. I&apos;ll review it clearly and suggest the best implementation approach.</p>
+                        <p>Send the bug, feature request, or UI reference. I&apos;ll review the Android scope clearly and suggest the cleanest implementation path.</p>
                     </div>
 
                     <div class="contact-panel__actions">
@@ -564,28 +677,28 @@
                         <p class="contact-card__label">Primary contact</p>
                         <h3>Email</h3>
                         <a href="mailto:m.alyasa62@gmail.com">m.alyasa62@gmail.com</a>
-                        <p>Best for bug reports, feature requests, and project discussions.</p>
+                        <p>Best for project discussions, bug reports, feature requests, and recruiter outreach.</p>
                     </article>
 
                     <article class="surface-card contact-card" data-reveal>
                         <p class="contact-card__label">Professional profile</p>
                         <h3>LinkedIn</h3>
                         <a href="https://www.linkedin.com/in/muhammad-al-yasa-dawood-666317286/" target="_blank" rel="noopener noreferrer">Muhammad Al Yasa Dawood</a>
-                        <p>Useful for direct client outreach and background review.</p>
+                        <p>Useful for direct client outreach, recruiter review, and professional context.</p>
                     </article>
 
                     <article class="surface-card contact-card" data-reveal>
                         <p class="contact-card__label">Code profile</p>
                         <h3>GitHub</h3>
                         <a href="https://github.com/Alyasa62" target="_blank" rel="noopener noreferrer">github.com/Alyasa62</a>
-                        <p>Public repos, experiments, and technical proof of work.</p>
+                        <p>Public Kotlin, Compose, Android, and case-study proof.</p>
                     </article>
 
                     <article class="surface-card contact-card contact-card--secondary" data-reveal>
                         <p class="contact-card__label">Secondary contact</p>
                         <h3>Phone / WhatsApp</h3>
                         <a href="tel:+923176444095">+92 317 6444095</a>
-                        <p>Available if a project discussion needs a faster follow-up.</p>
+                        <p>Available if a project discussion needs a faster follow-up after email or LinkedIn.</p>
                     </article>
                 </div>
             </div>
@@ -594,11 +707,11 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Muhammad Al Yasa Dawood. Android Developer - Kotlin, Jetpack Compose, Firebase, Room.</p>
+            <p>&copy; 2026 Muhammad Al Yasa Dawood. Android Developer - Kotlin, Jetpack Compose, Firebase, Supabase, Room, and Clean Architecture.</p>
         </div>
     </footer>
 
-    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title" aria-modal="true">
         <div class="project-dialog__panel">
             <button class="project-dialog__close" type="button" aria-label="Close case study">Close</button>
             <div class="project-dialog__body" id="project-dialog-body"></div>
@@ -644,6 +757,13 @@
                     <section>
                         <h3>Outcome / Award</h3>
                         <p>Hunarmand was presented as a final year project and earned Runner-Up at Ideathon &amp; Innovation Expo 2026.</p>
+                    </section>
+                    <section>
+                        <h3>Proof Links</h3>
+                        <div class="project-actions">
+                            <a class="button button--secondary" href="https://www.linkedin.com/posts/namal-university-mianwali_namalideathon2026-innovationexpo2026-futureinnovators-activity-7459875785982697472--Gfz" target="_blank" rel="noopener noreferrer">Award Proof</a>
+                            <span class="button button--static">Private Repository</span>
+                        </div>
                     </section>
                 </div>
                 <div class="case-study__media">
@@ -714,6 +834,13 @@
                         <h3>Outcome</h3>
                         <p>The project demonstrates local-first Android architecture, clean state management, and a useful utility flow without server dependency.</p>
                     </section>
+                    <section>
+                        <h3>Proof Links</h3>
+                        <div class="project-actions">
+                            <a class="button button--secondary" href="https://github.com/Alyasa62/AkhirKab" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="button button--secondary" href="https://www.linkedin.com/posts/muhammad-al-yasa-dawood-666317286_androiddev-kotlin-jetpackcompose-activity-7362419348520472576-9wXc" target="_blank" rel="noopener noreferrer">Video Demo</a>
+                        </div>
+                    </section>
                 </div>
                 <div class="case-study__media">
                     <figure>
@@ -781,6 +908,13 @@
                     <section>
                         <h3>Outcome</h3>
                         <p>Drawing Thoughts adds real Android publishing experience to the portfolio and shows work beyond routine CRUD screens.</p>
+                    </section>
+                    <section>
+                        <h3>Proof Links</h3>
+                        <div class="project-actions">
+                            <a class="button button--secondary" href="https://github.com/Alyasa62/drawing-thoughts-KMP" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="button button--secondary" href="https://play.google.com/store/apps/details?id=com.yasadevs.drawingthoughts" target="_blank" rel="noopener noreferrer">Play Store</a>
+                        </div>
                     </section>
                 </div>
                 <div class="case-study__media">

@@ -56,6 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 closeMenu();
             }
         });
+
+        document.addEventListener("click", (event) => {
+            if (!navMenu.classList.contains("is-open")) {
+                return;
+            }
+
+            const target = event.target;
+            if (!(target instanceof Node)) {
+                return;
+            }
+
+            if (!navMenu.contains(target) && !navToggle.contains(target)) {
+                closeMenu();
+            }
+        });
     }
 
     function setupReveal() {
@@ -123,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     return;
                 }
 
+                closeMenu();
                 openDialog(templateId, trigger);
             });
         });
