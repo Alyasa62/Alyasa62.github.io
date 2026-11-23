@@ -1,12 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title>Al Yasa favicon</title>
-  <defs>
-    <linearGradient id="accent" x1="10%" x2="90%" y1="10%" y2="90%">
-      <stop offset="0%" stop-color="#39df7c"/>
-      <stop offset="100%" stop-color="#1fa45a"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="18" fill="#08110d"/>
-  <path d="M18 46 30 18h4l12 28h-6.3l-2.3-5.8H26.6L24.3 46H18Zm10.9-11.1h6.2L32 27.1l-3.1 7.8Z" fill="url(#accent)"/>
-  <circle cx="47.5" cy="18.5" r="4.5" fill="#dff7e8" opacity=".92"/>
+  <title>Al Yasa</title>
+  <rect width="64" height="64" rx="14" fill="#12283f"/>
+  <path d="M17 47 30 17h4l13 30h-6.6l-2.5-6.2H26.1L23.6 47H17Zm11.7-11.8h6.6L32 27.3l-3.3 7.9Z" fill="#fff"/>
 </svg>
